@@ -40,29 +40,78 @@ label start:
             frame:
                 text displayText
 
+    screen choice_A:
+        imagebutton:
+            xpos 0.85
+            xanchor 0.5
+            ypos 0.2
+            yanchor 0.5
+            idle im.FactorScale("sound.png", 0.05)
+            action [Play("sound", "audio/User/一斤多少钱啊.mp3")]
+
+        imagebutton:
+            xpos 0.85
+            xanchor 0.5
+            ypos 0.29
+            yanchor 0.5
+            idle im.FactorScale("sound.png", 0.05)
+            action [Play("sound", "audio/User/一斤柚子多少钱啊.mp3")]
+
+        imagebutton:
+            xpos 0.85
+            xanchor 0.5
+            ypos 0.38
+            yanchor 0.5
+            idle im.FactorScale("sound.png", 0.05)
+            action [Play("sound", "audio/User/好呀.mp3")]
+
+        imagebutton:
+            xpos 0.85
+            xanchor 0.5
+            ypos 0.47
+            yanchor 0.5
+            idle im.FactorScale("sound.png", 0.05)
+            action [Play("sound", "audio/User/来个.mp3")]
+
+        imagebutton:
+            xpos 0.85
+            xanchor 0.5
+            ypos 0.56
+            yanchor 0.5
+            idle im.FactorScale("sound.png", 0.05)
+            action [Play("sound", "audio/User/要.mp3")]
+        
+
     label choice_A:
         # start dialogue
+        play sound "audio/Vendor/来来来，刚到的柚子，小姑娘，要不要来个.mp3"
         v "来来来，刚到的柚子，小伙子/小姑娘，要不要来个？"
+        stop sound
+
+        show screen choice_A
+        
         # create menu of choice responses
         menu:
-
             "一斤多少钱啊？":
-                jump tip_A1
-
-            "柚子多少钱啊？":
+                hide screen choice_A
                 jump tip_A1
             
             "一斤柚子多少钱啊？":
+                hide screen choice_A
                 jump tip_A1
 
             "好呀":
+                hide screen choice_A
                 jump choice_A3
             
             "来个":
+                hide screen choice_A
                 jump choice_A3
 
             "要":
+                hide screen choice_A
                 jump choice_A3
+
 
     label h_1:
         h "You can walk away and explore other stalls."
