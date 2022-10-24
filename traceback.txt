@@ -1,0 +1,22 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 232, in script
+    u "要五个"
+Exception: Sayer 'u' is not defined.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 232, in script
+    u "要五个"
+  File "/Users/tianhui/Downloads/renpy-8.0.3-sdk/renpy/ast.py", line 881, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "/Users/tianhui/Downloads/renpy-8.0.3-sdk/renpy/ast.py", line 774, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'u' is not defined.
+
+macOS-10.16-x86_64-i386-64bit x86_64
+Ren'Py 8.0.3.22090809
+Market 1.0
+Mon Oct 24 16:24:13 2022

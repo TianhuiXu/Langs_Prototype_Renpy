@@ -1,0 +1,17 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 122: end of line expected.
+(Perhaps you left out a " at the end of the first line.)
+    c "Sometimes vendors would propose to add in one or two more fruits to make it into an integer weight so that 
+            they don't need to give you changes in "毛"(10 cents). If you don't want more, you can always reject. 
+                                                     ^
+            But if you don't mind, you can accept and it's also easier for you to pay."
+
+File "game/script.rpy", line 240: expected statement.
+    v: "差一点到两斤，再给你拿一个到两斤呗"
+     ^
+
+Ren'Py Version: Ren'Py 8.0.3.22090809
+Mon Oct 24 16:23:00 2022
