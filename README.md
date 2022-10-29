@@ -10,6 +10,6 @@
  - If you want friendly English subtitles: [click here](https://tianhui.itch.io/langs-v2-prototype-w-english)
 
 ### Langs' Team
-- Sichen Huang: Business & UX/UI & Product development
-- Tianhui Xu: Software Engineering & Product development
+- [Sichen Huang](https://www.linkedin.com/in/sichen-lanny-huang/): Business & UX/UI & Product development
+- [Tianhui Xu](https://www.linkedin.com/in/tianhui-xu-844855175/): Software Engineering & Product development
 
